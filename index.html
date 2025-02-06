@@ -8,25 +8,23 @@
         window.onload = function () {
             // Список ссылок на видео (замени на свои)
             const videos = [
-               https://mega.nz/file/6VlyyJpb#WV5lVBK0AimQPA6ZELMKTiNF1j_y-LxajoE7rFpYC1A
-               https://mega.nz/file/CFUQWDgL#jow3_E8EyopUAS9sFsRBRrr9_qxfQQzavwlImfWGUig
-               https://mega.nz/file/Sd8QVDqb#wO80iWBmJz2CNZGZiOhwEbOcRucp9sjxJU3yl16bAhI
-               https://mega.nz/file/6QU2FTjA#AZLwJMmmyDKOc-6NSqYKYa945F4MomRiRSAbyX8s_14
-               https://mega.nz/file/LQs10R4Z#OLnHwPnJ6cM_nmtZ3pk7a-5M-UHz5g0qsZS3ENFnndI
-               https://mega.nz/file/Xc93xZCA#fB12UEBybDEJ9w90GMuYBXrqD9s-0AHU6jK1RLUW0m8
-               https://mega.nz/file/PV9RXTTR#pjqmt7-FTtM23GGPZ1hxsg3a7kX79Toy77wYg6_h85k
-               https://mega.nz/file/Hc9STKJR#0K8KTLFORRoBLBtxZEkeX8rV0YuWottNPC5wvtWEMUM
-               https://mega.nz/file/2RkAFarJ#P9gc0LEFL_geQ26HxfPCQ5JgXD1yV4WCoXbIuCoPi5g
-               https://mega.nz/file/Hd0nyZ4Q#ey-buv8iHTvOcSEHee7XDagJFPcQ1QN7FRdWpanv-AA
-               https://mega.nz/file/TUM10JBb#ys8TL8DjV6HYDuUwbS0Zptm6XEeXRQrY8apaBXgaJFU
-               https://mega.nz/file/nE931QRL#A1lT42fRFE2Fb45DRAD_zwDc9GcB-BwyzHuXgabLT1M
-               https://mega.nz/file/PI1ghJRa#izuH1Bf3HyLtQW3HYMCpIsP5TJDz4LVU7_e_IlNiOAQ
-               https://mega.nz/file/mIEAGLQD#hfNXlcTZ-5Glk_biHYDP63WGdIk4eeTCevB3q_wqU0g
+                "https://mega.nz/file/6VlyyJpb#WV5lVBK0AimQPA6ZELMKTiNF1j_y-LxajoE7rFpYC1A",
+                "https://mega.nz/file/CFUQWDgL#jow3_E8EyopUAS9sFsRBRrr9_qxfQQzavwlImfWGUig",
+                "https://mega.nz/file/Sd8QVDqb#wO80iWBmJz2CNZGZiOhwEbOcRucp9sjxJU3yl16bAhI",
+                "https://mega.nz/file/6QU2FTjA#AZLwJMmmyDKOc-6NSqYKYa945F4MomRiRSAbyX8s_14",
+                "https://mega.nz/file/LQs10R4Z#OLnHwPnJ6cM_nmtZ3pk7a-5M-UHz5g0qsZS3ENFnndI",
+                "https://mega.nz/file/Xc93xZCA#fB12UEBybDEJ9w90GMuYBXrqD9s-0AHU6jK1RLUW0m8",
+                "https://mega.nz/file/PV9RXTTR#pjqmt7-FTtM23GGPZ1hxsg3a7kX79Toy77wYg6_h85k",
+                "https://mega.nz/file/Hc9STKJR#0K8KTLFORRoBLBtxZEkeX8rV0YuWottNPC5wvtWEMUM",
+                "https://mega.nz/file/2RkAFarJ#P9gc0LEFL_geQ26HxfPCQ5JgXD1yV4WCoXbIuCoPi5g",
+                "https://mega.nz/file/Hd0nyZ4Q#ey-buv8iHTvOcSEHee7XDagJFPcQ1QN7FRdWpanv-AA",
+                "https://mega.nz/file/TUM10JBb#ys8TL8DjV6HYDuUwbS0Zptm6XEeXRQrY8apaBXgaJFU",
+                "https://mega.nz/file/nE931QRL#A1lT42fRFE2Fb45DRAD_zwDc9GcB-BwyzHuXgabLT1M",
+                "https://mega.nz/file/PI1ghJRa#izuH1Bf3HyLtQW3HYMCpIsP5TJDz4LVU7_e_IlNiOAQ",
+                "https://mega.nz/file/mIEAGLQD#hfNXlcTZ-5Glk_biHYDP63WGdIk4eeTCevB3q_wqU0g"
             ];
-
             // Выбираем случайное видео
             const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-
             // Перенаправляем пользователя
             window.location.href = randomVideo;
         };
