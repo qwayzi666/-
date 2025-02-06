@@ -23,10 +23,10 @@
                 "https://mega.nz/file/PI1ghJRa#izuH1Bf3HyLtQW3HYMCpIsP5TJDz4LVU7_e_IlNiOAQ",
                 "https://mega.nz/file/mIEAGLQD#hfNXlcTZ-5Glk_biHYDP63WGdIk4eeTCevB3q_wqU0g"
             ];
-            
+
             // Выбираем случайное видео
             const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-            
+
             // Создаем элемент video
             const videoElement = document.createElement('video');
             videoElement.src = randomVideo;
@@ -35,7 +35,7 @@
             videoElement.style.width = "100%";
             videoElement.style.height = "100%";
             document.body.appendChild(videoElement);
-            
+
             // Функция для перехода в полноэкранный режим
             function goFullscreen() {
                 if (videoElement.requestFullscreen) {
@@ -49,8 +49,10 @@
                 }
             }
 
-            // Переводим видео в полноэкранный режим после его загрузки
-            videoElement.oncanplay = goFullscreen;
+            // Просим пользователя кликнуть для перехода в полноэкранный режим
+            document.body.addEventListener('click', function() {
+                goFullscreen();
+            });
         };
     </script>
 </head>
@@ -58,3 +60,4 @@
     <p>Перенаправляем на случайное видео...</p>
 </body>
 </html>
+
